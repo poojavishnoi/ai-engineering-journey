@@ -10,7 +10,7 @@ While learning, I realised something:
 we use so much technology every day, but we rarely stop to ask how it actually works.
 
 So I'm starting a series: Everyday Engineering.
-Every 2 days, one simple question about the things around us.
+Every day, one simple question about the things around us.
 
 Here's the first one.
 

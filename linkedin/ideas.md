@@ -1,7 +1,7 @@
 # Everyday Engineering: post ideas
 
 **Series idea:** everyday things we see but never stop to ask *how* or *why* they work that way.
-**Schedule:** every 2 days. Roughly 1 in 3 posts should be about AI, which builds credibility for the AI-engineer story.
+**Schedule:** every day (write a few ahead on weekends so the series keeps going on busy days). Roughly 1 in 3 posts should be about AI, which builds credibility for the AI-engineer story.
 
 **How each post is built:** a hook question → the naive answer → the real answer (the engineering) → the clever trade-off → a question for readers.
 

@@ -22,5 +22,5 @@ Tick each item off as you finish it. Each topic gets a note in `notes/`, and eac
 
 ## Every week
 - [ ] 1 AI system design question
-- [ ] 3 LinkedIn posts (one every 2 days)
+- [ ] A LinkedIn post every day
 - [ ] Notes for every concept learned
