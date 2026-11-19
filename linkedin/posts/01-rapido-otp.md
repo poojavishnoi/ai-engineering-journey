@@ -1,6 +1,6 @@
 # Post 01: The Rapido OTP (series launch)
 
-**Status:** draft v4 (no dividers, no icons) · **Topic:** apps & daily life · **This post also launches the series**
+**Status:** published 2026-11-19 · **Topic:** apps & daily life · **This post also launches the series**
 
 ---
 

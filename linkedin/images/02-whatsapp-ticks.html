@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #F6F5F1; color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 110px 100px 90px;
+  }
+  .series { font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A877F; font-weight: 500; }
+  h1 { margin-top: 44px; font-size: 104px; line-height: 1.02; font-weight: 700; letter-spacing: -0.035em; }
+  h1 span { color: #A9A59B; }
+  .rows { margin-top: 100px; display: flex; flex-direction: column; gap: 28px; }
+  .row {
+    display: flex; align-items: center; gap: 44px;
+    padding: 36px 48px; border: 2px solid #E1DED6; border-radius: 28px;
+  }
+  .row.last { border-color: #141414; }
+  .ticks { width: 120px; flex-shrink: 0; display: flex; }
+  .ticks svg { width: 120px; height: 64px; }
+  .what { font-size: 34px; font-weight: 600; letter-spacing: -0.01em; }
+  .who { margin-top: 8px; font-size: 24px; color: #8A877F; }
+  .note { margin-top: auto; font-size: 34px; line-height: 1.4; color: #4A4843; max-width: 860px; }
+  .note b { color: #141414; font-weight: 600; }
+  .foot { margin-top: 56px; padding-top: 30px; border-top: 2px solid #E4E1D9; display: flex; justify-content: flex-end; font-size: 24px; color: #8A877F; }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 02</div>
+  <h1>Every tick<br><span>is a reply.</span></h1>
+
+  <div class="rows">
+    <div class="row">
+      <div class="ticks">
+        <svg viewBox="0 0 120 64" fill="none" stroke="#A9A59B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 32 L26 50 L58 14"/>
+        </svg>
+      </div>
+      <div><div class="what">Reached the server</div><div class="who">WhatsApp holds it for now</div></div>
+    </div>
+    <div class="row">
+      <div class="ticks">
+        <svg viewBox="0 0 120 64" fill="none" stroke="#A9A59B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 32 L26 50 L58 14"/><path d="M44 44 L50 50 L84 14"/>
+        </svg>
+      </div>
+      <div><div class="what">Reached their phone</div><div class="who">Their phone replies: "I got it"</div></div>
+    </div>
+    <div class="row last">
+      <div class="ticks">
+        <svg viewBox="0 0 120 64" fill="none" stroke="#3B82C4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 32 L26 50 L58 14"/><path d="M44 44 L50 50 L84 14"/>
+        </svg>
+      </div>
+      <div><div class="what">They opened the chat</div><div class="who">Their phone replies: "They read it"</div></div>
+    </div>
+  </div>
+
+  <p class="note">Your phone never decides the ticks. <b>It waits to be told.</b></p>
+
+  <div class="foot"><span>Why do some never turn blue?</span></div>
+</body>
+</html>

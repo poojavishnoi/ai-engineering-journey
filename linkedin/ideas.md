@@ -12,7 +12,7 @@
 - [ ] How does Google Pay know a payment "is pending" — who decides?
 - [ ] Why does the Uber/Rapido car on the map sometimes drive through buildings?
 - [ ] How does the IRCTC Tatkal system survive 10 AM?
-- [ ] Why does WhatsApp show 2 grey ticks, then blue? What's actually happening?
+- [x] Why does WhatsApp show 2 grey ticks, then blue? → `posts/02-whatsapp-ticks.md`
 - [ ] Why do OTP SMS messages auto-fill on Android but not always on iOS?
 - [ ] How does Instagram show a blurred image before the real one loads?
 - [ ] Why does "Pay ₹1 to verify" exist on so many apps?
