@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #F6F5F1;
+    color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 110px 100px 90px;
+  }
+  .series {
+    font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: #8A877F; font-weight: 500;
+  }
+  h1 {
+    margin-top: 44px;
+    font-size: 104px; line-height: 1.02; font-weight: 700; letter-spacing: -0.035em;
+  }
+  h1 span { color: #A9A59B; }
+  .cards { margin-top: 110px; display: flex; flex-direction: column; gap: 36px; }
+  .card {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 40px 48px;
+    border: 2px solid #141414; border-radius: 28px;
+  }
+  .card.muted { border-color: #CFCBC1; color: #A9A59B; }
+  .who { font-size: 30px; font-weight: 500; }
+  .ride { margin-top: 10px; font-family: "SF Mono", Menlo, monospace; font-size: 24px; color: #8A877F; }
+  .card.muted .ride { color: #BDB9AF; }
+  .otp { display: flex; gap: 14px; }
+  .otp div {
+    width: 74px; height: 92px; border-radius: 14px;
+    background: #141414; color: #F6F5F1;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "SF Mono", Menlo, monospace; font-size: 50px; font-weight: 600;
+  }
+  .card.muted .otp div { background: #E4E1D9; color: #A9A59B; }
+  .note {
+    margin-top: auto;
+    font-size: 34px; line-height: 1.4; color: #4A4843; max-width: 820px;
+  }
+  .note b { color: #141414; font-weight: 600; }
+  .foot {
+    margin-top: 56px; padding-top: 30px; border-top: 2px solid #E4E1D9;
+    display: flex; justify-content: space-between;
+    font-size: 24px; color: #8A877F;
+  }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 01</div>
+  <h1>Same OTP.<br><span>Different rides.</span></h1>
+
+  <div class="cards">
+    <div class="card">
+      <div>
+        <div class="who">Your ride</div>
+        <div class="ride">ride_7f3a</div>
+      </div>
+      <div class="otp"><div>4</div><div>8</div><div>2</div><div>1</div></div>
+    </div>
+    <div class="card muted">
+      <div>
+        <div class="who">Rider next to you</div>
+        <div class="ride">ride_c91e</div>
+      </div>
+      <div class="otp"><div>4</div><div>8</div><div>2</div><div>1</div></div>
+    </div>
+  </div>
+
+  <p class="note">An OTP isn't checked against everyone. <b>It's checked against one booking.</b></p>
+
+  <div class="foot"><span></span><span>Why only 4 digits?</span></div>
+</body>
+</html>
