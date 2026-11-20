@@ -4,6 +4,10 @@ Tick each item off as you finish it. Each topic gets a note in `notes/`, and eac
 
 ## Phase 1: How LLMs actually work
 - [ ] **Week 1:** Tokens, embeddings, attention (the intuition), sampling & temperature
+  - [x] Lesson 1: what an LLM is, built a tiny next-word model, temperature 0 vs 1, hallucination ([note](notes/01-what-is-an-llm.md), [code](weeks/week-01/01-tiny-llm.ts))
+  - [ ] Lesson 2: tokens (the strawberry puzzle with a real tokenizer)
+  - [ ] Embeddings
+  - [ ] Attention (the intuition)
 - [ ] **Week 2:** The raw Claude API: messages, system prompt, streaming, context window, cost
 - [ ] **Week 3:** Tool calling & structured output; an agent loop from scratch
 - [ ] **Week 4:** 🛠️ Project 1, a streaming chat app with generative UI
