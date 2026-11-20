@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #F6F5F1; color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 100px 100px 80px;
+  }
+  .series { font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A877F; font-weight: 500; }
+  h1 { margin-top: 36px; font-size: 76px; line-height: 1.08; font-weight: 700; letter-spacing: -0.03em; }
+  h1 span { color: #A9A59B; }
+  .chart { margin-top: 56px; }
+  .chart svg { display: block; width: 880px; height: 440px; overflow: visible; }
+  .loop-title { margin-top: 56px; font-size: 26px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A877F; font-weight: 600; }
+  .loop { margin-top: 20px; display: flex; align-items: center; gap: 16px; }
+  .step { flex: 1; padding: 26px 24px; border: 2px solid #E1DED6; border-radius: 22px; font-size: 27px; line-height: 1.3; font-weight: 600; }
+  .step.bad { border-color: #D9822B; color: #B4651A; }
+  .arrow { font-size: 36px; color: #A9A59B; }
+  .foot { margin-top: auto; padding-top: 28px; border-top: 2px solid #E4E1D9; display: flex; justify-content: space-between; font-size: 24px; color: #8A877F; }
+  .foot b { color: #141414; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 02</div>
+  <h1>Maggi sold out at 7 pm.<br><span>The data thinks nobody wanted it.</span></h1>
+
+  <div class="chart"><svg id="c" viewBox="0 0 880 440"></svg></div>
+
+  <div class="loop-title">If the AI trusts those zeros</div>
+  <div class="loop">
+    <div class="step">"Nobody buys Maggi after 7"</div>
+    <div class="arrow">→</div>
+    <div class="step">Store orders less Maggi</div>
+    <div class="arrow">→</div>
+    <div class="step bad">Sells out even earlier</div>
+  </div>
+
+  <div class="foot"><b>A model only learns from the data you record.</b><span>Rainy evening, one store</span></div>
+
+<script>
+  const hours  = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
+  const sales  = [18, 22, 30, 48, 72, 0, 0, 0, 0, 0];
+  const demand = [18, 22, 30, 48, 72, 88, 92, 80, 62, 40];
+  const W = 880, base = 380, scale = 3.0, slot = W / hours.length, bw = 56;
+  const ORANGE = '#D9822B';
+  let s = `<line x1="0" y1="${base}" x2="${W}" y2="${base}" stroke="#D6D3CA" stroke-width="2"/>`;
+  hours.forEach((h, i) => {
+    const x = i * slot + (slot - bw) / 2;
+    if (sales[i] > 0) {
+      s += `<rect x="${x}" y="${base - sales[i] * scale}" width="${bw}" height="${sales[i] * scale}" rx="8" fill="#141414"/>`;
+    } else {
+      const top = base - demand[i] * scale;
+      s += `<rect x="${x + 1.5}" y="${top + 1.5}" width="${bw - 3}" height="${demand[i] * scale - 3}" rx="8" fill="#FBEBDA" stroke="${ORANGE}" stroke-width="3" stroke-dasharray="9 7"/>`;
+      s += `<text x="${x + bw / 2}" y="${base - 16}" text-anchor="middle" font-size="28" font-weight="700" fill="#141414">0</text>`;
+    }
+    s += `<text x="${x + bw / 2}" y="${base + 42}" text-anchor="middle" font-size="24" fill="#8A877F">${h}${i === 0 || i === 9 ? ' pm' : ''}</text>`;
+  });
+  // labels written directly on the chart (no legend)
+  s += `<text x="0" y="${base - 72 * scale - 70}" font-size="26" font-weight="600" fill="#141414">Maggi sold</text>`;
+  s += `<text x="0" y="${base - 72 * scale - 38}" font-size="22" fill="#8A877F">orders go up with the rain</text>`;
+  const mx = 5 * slot;
+  s += `<line x1="${mx}" y1="0" x2="${mx}" y2="${base}" stroke="#141414" stroke-width="2" stroke-dasharray="4 6"/>`;
+  s += `<text x="${mx + 16}" y="22" font-size="26" font-weight="600" fill="${ORANGE}">Sold out. People still wanted it.</text>`;
+  s += `<text x="${mx + 16}" y="${base + 88}" font-size="22" font-weight="600" fill="#141414">But the data saves: 0, 0, 0, 0, 0</text>`;
+  document.getElementById('c').innerHTML = s;
+</script>
+</body>
+</html>
