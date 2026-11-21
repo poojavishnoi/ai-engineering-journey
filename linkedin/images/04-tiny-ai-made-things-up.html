@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #D3E4F7; color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 100px 100px 80px;
+  }
+  .series { font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6B7F; font-weight: 600; }
+  h1 { margin-top: 32px; font-size: 80px; line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; }
+  h1 span { color: #5B6B7F; }
+  .card { background: #FFFFFF; border-radius: 28px; padding: 36px 44px; }
+  .taught { margin-top: 52px; }
+  .label { font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: #5B6B7F; }
+  .lines { margin-top: 18px; font-family: "SF Mono", Menlo, monospace; font-size: 29px; line-height: 1.6; color: #6B7684; }
+  mark { color: #141414; font-weight: 600; border-radius: 8px; padding: 1px 6px; }
+  .a { background: #FBD9B5; }
+  .b { background: #CDEBC4; }
+  .arrow { text-align: center; font-size: 40px; color: #5B6B7F; margin: 14px 0; }
+  .wrote .big { margin-top: 14px; font-family: "SF Mono", Menlo, monospace; font-size: 44px; font-weight: 600; }
+  .wrote .big mark { padding: 2px 10px; }
+  .wrote .small { margin-top: 14px; font-size: 26px; color: #B4651A; font-weight: 600; }
+  .foot { margin-top: auto; padding-top: 26px; border-top: 2px solid #B7CCE4; display: flex; justify-content: space-between; font-size: 22px; color: #5B6B7F; }
+  .foot b { color: #141414; font-size: 26px; }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 04</div>
+  <h1>I built a tiny AI.<br><span>It made something up.</span></h1>
+
+  <div class="card taught">
+    <div class="label">What I taught it</div>
+    <div class="lines">
+      i drink chai in the morning<br>
+      i drink chai at night<br>
+      i drink coffee <mark class="b">at work</mark><br>
+      i <mark class="a">eat maggi</mark> when it rains<br>
+      i eat maggi at night<br>
+      i eat poha in the morning
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="card wrote">
+    <div class="label">What it wrote</div>
+    <div class="big">i <mark class="a">eat maggi</mark> <mark class="b">at work</mark></div>
+    <div class="small">I never taught it this sentence.</div>
+  </div>
+
+  <div class="foot"><b>It picks likely words, not true ones.</b><span>40 lines of code</span></div>
+</body>
+</html>

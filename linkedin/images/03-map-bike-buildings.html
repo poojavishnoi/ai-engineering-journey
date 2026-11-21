@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #D3E4F7; color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 100px 100px 80px;
+  }
+  .series { font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6B7F; font-weight: 600; }
+  h1 { margin-top: 32px; font-size: 80px; line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; }
+  h1 span { color: #5B6B7F; }
+  .map { margin-top: 56px; background: #FFFFFF; border-radius: 28px; padding: 40px; }
+  .map svg { display: block; width: 800px; height: 470px; }
+  .note { margin-top: 48px; font-size: 30px; line-height: 1.4; color: #2E3A48; }
+  .note b { color: #141414; }
+  .foot { margin-top: auto; padding-top: 26px; border-top: 2px solid #B7CCE4; display: flex; justify-content: flex-end; font-size: 22px; color: #5B6B7F; }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 03</div>
+  <h1>The bike didn't ride<br><span>through that building.</span></h1>
+
+  <div class="map">
+    <svg viewBox="0 0 800 470">
+      <!-- building -->
+      <rect x="130" y="40" width="440" height="250" rx="18" fill="#DCE5EF"/>
+      <text x="550" y="78" text-anchor="end" font-size="20" letter-spacing="4" font-weight="700" fill="#9AABBF">BUILDING</text>
+      <!-- road (L shape around the building) -->
+      <path d="M 0 360 L 650 360 L 650 0" fill="none" stroke="#EEF2F6" stroke-width="56" stroke-linejoin="round"/>
+      <!-- where the bike really went -->
+      <path d="M 210 360 L 650 360 L 650 100" fill="none" stroke="#141414" stroke-width="7" stroke-linejoin="round"/>
+      <!-- what the app draws -->
+      <line x1="210" y1="360" x2="650" y2="100" stroke="#D9822B" stroke-width="7" stroke-dasharray="16 11" stroke-linecap="round"/>
+      <!-- dots -->
+      <circle cx="210" cy="360" r="17" fill="#141414" stroke="#FFFFFF" stroke-width="5"/>
+      <circle cx="650" cy="100" r="17" fill="#141414" stroke="#FFFFFF" stroke-width="5"/>
+      <!-- labels -->
+      <text x="150" y="130" font-size="28" font-weight="700" fill="#B4651A">What the app draws</text>
+      <text x="150" y="164" font-size="22" fill="#B4651A">a straight line between two dots</text>
+      <text x="210" y="428" text-anchor="middle" font-size="24" font-weight="700" fill="#141414">Dot 1</text>
+      <text x="300" y="428" font-size="24" font-weight="700" fill="#141414">Where the bike really went</text>
+      <text x="690" y="96" font-size="24" font-weight="700" fill="#141414">Dot 2</text>
+      <text x="690" y="126" font-size="20" fill="#5B6B7F">3 sec later</text>
+    </svg>
+  </div>
+
+  <p class="note">The app gets the rider's location only every few seconds.<br><b>Good apps move the bike along the road instead.</b></p>
+
+  <div class="foot"><span>Rapido, Uber, Swiggy: same problem</span></div>
+</body>
+</html>

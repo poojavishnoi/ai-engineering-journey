@@ -5,7 +5,7 @@ Tick each item off as you finish it. Each topic gets a note in `notes/`, and eac
 ## Phase 1: How LLMs actually work
 - [ ] **Week 1:** Tokens, embeddings, attention (the intuition), sampling & temperature
   - [x] Lesson 1: what an LLM is, built a tiny next-word model, temperature 0 vs 1, hallucination ([note](notes/01-what-is-an-llm.md), [code](weeks/week-01/01-tiny-llm.ts))
-  - [ ] Lesson 2: tokens (the strawberry puzzle with a real tokenizer)
+  - [x] Lesson 2: built a BPE tokenizer, solved the strawberry puzzle; made the tiny AI look back 2 words (0 new sentences, so it's a copy machine) ([note](notes/02-tokens.md), [tokenizer](weeks/week-01/02-tokenizer.ts), [memory experiment](weeks/week-01/03-looking-back-further.ts))
   - [ ] Embeddings
   - [ ] Attention (the intuition)
 - [ ] **Week 2:** The raw Claude API: messages, system prompt, streaming, context window, cost

@@ -10,7 +10,7 @@
 - [ ] How does Swiggy/Zomato show "arriving in 12 min", and why does it sometimes jump?
 - [ ] Why does UPI ask for your PIN but never your OTP for small payments?
 - [ ] How does Google Pay know a payment "is pending" — who decides?
-- [ ] Why does the Uber/Rapido car on the map sometimes drive through buildings?
+- [x] Why does the Uber/Rapido car on the map sometimes drive through buildings? → `posts/03-map-bike-buildings.md`
 - [ ] How does the IRCTC Tatkal system survive 10 AM?
 - [x] Why does WhatsApp show 2 grey ticks, then blue? → `posts/02-whatsapp-ticks.md`
 - [ ] Why do OTP SMS messages auto-fill on Android but not always on iOS?
@@ -24,7 +24,7 @@
 - [ ] How does Google Photos find every photo of your mom? (embeddings)
 - [ ] Why does your phone keyboard guess the next word, and why is it weirdly personal?
 - [ ] How does Instagram know which reel to show you next?
-- [ ] Why does ChatGPT sometimes confidently make things up?
+- [x] Why does ChatGPT sometimes confidently make things up? → `posts/04-tiny-ai-made-things-up.md`
 - [ ] How does "Hey Siri" work without your phone listening to everything?
 - [ ] Why do AI answers come word by word instead of all at once? (streaming)
 
