@@ -1,6 +1,6 @@
 # Post 04: I built a tiny AI and it made something up
 
-**Status:** draft (for 2026-11-22) · **Topic:** AI · **Counts as an AI post** · **Image:** `images/04-tiny-ai-made-things-up.png`
+**Status:** published 2026-11-22 · **Topic:** AI · **Counts as an AI post** · **Image:** `images/04-tiny-ai-made-things-up.png`
 **Based on:** Week 1, Lesson 1 (`weeks/week-01/01-tiny-llm.ts`, `notes/01-what-is-an-llm.md`)
 
 ---
@@ -70,7 +70,11 @@ What I'm taking from this:
 don't judge an AI answer by how sure it sounds.
 If the facts matter, give it the facts, and check what it says.
 
-Have you caught an AI confidently making something up? What was it?
+I'm learning AI engineering from the basics and sharing as I go.
+This is week 1, so I've kept it simple on purpose.
+How real models understand meaning, how they focus on the right words, and how they actually learn are all coming up next.
+
+So if you're thinking "but that's not the full picture", you're right. I'll get there, one post at a time.
 
 #EverydayEngineering #AIEngineering #LearningInPublic #GenerativeAI
 

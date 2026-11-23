@@ -16,7 +16,7 @@
 - [ ] Why do OTP SMS messages auto-fill on Android but not always on iOS?
 - [ ] How does Instagram show a blurred image before the real one loads?
 - [ ] Why does "Pay ₹1 to verify" exist on so many apps?
-- [ ] How does BookMyShow stop two people booking the same seat?
+- [x] How does BookMyShow stop two people booking the same seat? → `posts/05-bookmyshow-same-seat.md`
 - [ ] Why does Spotify start playing instantly, while some videos buffer?
 
 ## 🤖 Everyday AI

@@ -1,6 +1,6 @@
 # Post 02: "Only 2 left" on Blinkit / Zepto
 
-**Status:** draft · **Topic:** apps & daily life · **Replaces the WhatsApp ticks draft as #2**
+**Status:** published 2026-11-20 · **Topic:** apps & daily life · **Replaces the WhatsApp ticks draft as #2**
 
 ---
 
