@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #D3E4F7; color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 100px 100px 80px;
+  }
+  .series { font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6B7F; font-weight: 600; }
+  h1 { margin-top: 32px; font-size: 76px; line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; }
+  h1 span { color: #5B6B7F; }
+  .card { margin-top: 60px; background: #FFFFFF; border-radius: 28px; padding: 34px 44px 30px; }
+  .head { display: flex; justify-content: space-between; font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: #5B6B7F; padding-bottom: 14px; }
+  .row { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; border-top: 2px solid #EEF2F6; font-size: 32px; }
+  .q { font-family: "SF Mono", Menlo, monospace; font-weight: 600; background: #EEF2F6; padding: 4px 14px; border-radius: 8px; }
+  .how { font-size: 22px; color: #5B6B7F; margin-left: 16px; flex: 1; white-space: nowrap; }
+  .r { display: flex; gap: 14px; font-weight: 700; font-size: 26px; }
+  .r span { width: 150px; text-align: center; padding: 6px 0; border-radius: 8px; }
+  .no { color: #B4651A; background: #FBEFE3; }
+  .yes { color: #2E7D4F; background: #E4F3EA; }
+  .cols { display: flex; gap: 14px; }
+  .cols span { width: 150px; text-align: center; }
+  .foot { margin-top: auto; padding-top: 26px; border-top: 2px solid #B7CCE4; display: flex; justify-content: space-between; font-size: 22px; color: #5B6B7F; }
+  .foot b { color: #141414; font-size: 26px; }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 06</div>
+  <h1>5 people search for<br>the same kurti.<br><span>Simple search finds 1.</span></h1>
+
+  <div class="card">
+    <div class="head"><span>They type</span><div class="cols"><span>Letter match</span><span>Smart search</span></div></div>
+    <div class="row"><span class="q">kurti</span><span class="how"></span><div class="r"><span class="yes">found</span><span class="yes">found</span></div></div>
+    <div class="row"><span class="q">kurthi</span><span class="how">1 letter off</span><div class="r"><span class="no">0 results</span><span class="yes">found</span></div></div>
+    <div class="row"><span class="q">kurtee</span><span class="how">sounds same</span><div class="r"><span class="no">0 results</span><span class="yes">found</span></div></div>
+    <div class="row"><span class="q">कुर्ती</span><span class="how">Hindi script</span><div class="r"><span class="no">0 results</span><span class="yes">found</span></div></div>
+    <div class="row"><span class="q">ethnic top</span><span class="how">same meaning</span><div class="r"><span class="no">0 results</span><span class="yes">found</span></div></div>
+  </div>
+
+  <div class="foot"><b>Match the meaning, not the letters.</b><span>The last one needs AI (embeddings)</span></div>
+</body>
+</html>

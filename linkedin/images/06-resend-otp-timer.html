@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    background: #D3E4F7; color: #141414;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+    padding: 100px 100px 80px;
+  }
+  .series { font-size: 19px; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6B7F; font-weight: 600; }
+  h1 { margin-top: 32px; font-size: 76px; line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; }
+  h1 span { color: #5B6B7F; }
+  .btn { margin-top: 44px; align-self: flex-start; background: #FFFFFF; border-radius: 20px; padding: 24px 36px; font-size: 34px; font-weight: 600; color: #9AA6B4; display: flex; align-items: center; gap: 18px; }
+  .btn b { color: #2F6FB3; font-family: "SF Mono", Menlo, monospace; }
+  .card { margin-top: 32px; background: #FFFFFF; border-radius: 28px; padding: 30px 44px 34px; }
+  .card + .card { margin-top: 22px; }
+  .num { font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: #5B6B7F; }
+  .t { margin-top: 10px; font-size: 38px; font-weight: 700; letter-spacing: -0.01em; }
+  .s { margin-top: 8px; font-size: 27px; color: #4A5868; line-height: 1.3; }
+  .foot { margin-top: auto; padding-top: 26px; border-top: 2px solid #B7CCE4; display: flex; justify-content: space-between; font-size: 22px; color: #5B6B7F; }
+  .foot b { color: #141414; font-size: 26px; }
+</style>
+</head>
+<body>
+  <div class="series">Everyday Engineering · 06</div>
+  <h1>Why can't I tap<br>"Resend OTP"?<br><span>Three reasons.</span></h1>
+
+  <div class="btn">Resend OTP in <b>0:29</b></div>
+
+  <div class="card">
+    <div class="num">1 · The first one is on its way</div>
+    <div class="t">SMS is slow, not lost.</div>
+    <div class="s">Resend too soon and you get two OTPs. Which one works?</div>
+  </div>
+  <div class="card">
+    <div class="num">2 · Every SMS costs money</div>
+    <div class="t">The app pays for each OTP.</div>
+    <div class="s">A few paise, times millions of logins a day.</div>
+  </div>
+  <div class="card">
+    <div class="num">3 · Bots press it on purpose</div>
+    <div class="t">SMS pumping fraud.</div>
+    <div class="s">Scammers earn a cut of every SMS. The app pays the bill.</div>
+  </div>
+
+  <div class="foot"><b>The timer is a speed limit.</b><span>30s → 60s → "Get OTP on call"</span></div>
+</body>
+</html>

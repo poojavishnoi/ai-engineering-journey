@@ -18,13 +18,15 @@
 - [ ] Why does "Pay ₹1 to verify" exist on so many apps?
 - [x] How does BookMyShow stop two people booking the same seat? → `posts/05-bookmyshow-same-seat.md`
 - [ ] Why does Spotify start playing instantly, while some videos buffer?
+- [ ] Why does "Resend OTP" make you wait 30 seconds? → drafted in `posts/06-resend-otp-timer.md`, renumber when used
 
 ## 🤖 Everyday AI
-- [ ] Why can't ChatGPT count the r's in "strawberry"? (tokens) ← lines up with Week 1
+- [ ] Why can't ChatGPT count the r's in "strawberry"? (tokens) → drafted in `posts/06-strawberry-tokens.md`, renumber when used
 - [ ] How does Google Photos find every photo of your mom? (embeddings)
 - [ ] Why does your phone keyboard guess the next word, and why is it weirdly personal?
 - [ ] How does Instagram know which reel to show you next?
 - [x] Why does ChatGPT sometimes confidently make things up? → `posts/04-tiny-ai-made-things-up.md`
+- [x] How do shopping apps understand "kurthi", "kurtee" and "कुर्ती"? (search, embeddings) → `posts/06-kurti-search.md`
 - [ ] How does "Hey Siri" work without your phone listening to everything?
 - [ ] Why do AI answers come word by word instead of all at once? (streaming)
 
