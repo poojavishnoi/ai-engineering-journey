@@ -27,6 +27,7 @@
 - [ ] How does Instagram know which reel to show you next?
 - [x] Why does ChatGPT sometimes confidently make things up? → `posts/04-tiny-ai-made-things-up.md`
 - [x] How do shopping apps understand "kurthi", "kurtee" and "कुर्ती"? (search, embeddings) → `posts/06-kurti-search.md`
+- [x] You talked about it, now you see ads: is your phone listening? (ad systems, embeddings) → `posts/07-is-my-phone-listening.md`
 - [ ] How does "Hey Siri" work without your phone listening to everything?
 - [ ] Why do AI answers come word by word instead of all at once? (streaming)
 
