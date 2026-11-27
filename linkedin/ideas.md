@@ -17,6 +17,7 @@
 - [ ] How does Instagram show a blurred image before the real one loads?
 - [ ] Why does "Pay ₹1 to verify" exist on so many apps?
 - [x] How does BookMyShow stop two people booking the same seat? → `posts/05-bookmyshow-same-seat.md`
+- [x] Why does the cab price almost double when it rains? (surge pricing, hexagon zones) → `posts/08-surge-pricing-rain.md`
 - [ ] Why does Spotify start playing instantly, while some videos buffer?
 - [ ] Why does "Resend OTP" make you wait 30 seconds? → drafted in `posts/06-resend-otp-timer.md`, renumber when used
 
