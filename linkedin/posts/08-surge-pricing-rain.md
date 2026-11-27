@@ -9,56 +9,39 @@ Copy from the box below (GitHub has a copy button at its top right). Line breaks
 ```text
 Everyday Engineering #8
 
-6 pm. Same ride I take every day.
-Yesterday it was ₹180.
-Today it's raining, and the app says ₹320.
+Why does the cab price almost double when it rains?
 
-My first thought: they're cashing in on the rain.
-So I looked into how that price is actually decided.
-It's not a person, and it's not one number for the city.
-It happens in 5 steps.
+Yesterday at 6 pm, my usual ride home cost ₹180. Today it was raining, and the same ride showed ₹320. My first thought was that the app was cashing in on the rain. So I looked into how that price is actually decided, and it turns out to be a neat piece of engineering.
 
-1. Zones
-The city is cut into small hexagons, a few blocks each.
-Every hexagon gets its own price.
-That's why walking 500 metres down the road can make the price drop.
-You've stepped into a different hexagon.
+Here's how it works, in 5 steps:
 
-2. The math
-Every minute or so, each hexagon asks two questions:
-How many people are opening the app here right now?
-How many free drivers are nearby?
-10 people and 10 drivers: normal price.
-30 people and 6 drivers: the price goes up.
+1. The city is split into zones
+• The map is divided into small hexagons, each a few blocks wide.
+• Every hexagon gets its own price.
+• That's why walking 500 metres down the road can sometimes make the price drop.
 
-3. Rain hits both sides
-More people want a cab.
-Nobody wants to walk to the metro or ride a scooter in the rain.
-And fewer drivers are free.
-Many bike riders log off.
-Traffic slows down, so each driver finishes fewer rides per hour.
+2. Each zone compares demand and supply
+• Every minute or so, the system checks how many people are opening the app in that zone.
+• It also checks how many free drivers are nearby.
+• 10 riders and 10 drivers means a normal price. 30 riders and 6 drivers means the price goes up.
 
-4. The price does two jobs
-Why not just make people wait?
-Because a higher price makes some people wait 20 minutes, or take an auto.
-And it pulls drivers in.
-A driver two hexagons away sees your area light up and heads over.
-Without it, the app wouldn't show ₹180.
-It would show "No cabs available".
-Cheap, but no ride.
+3. Rain hits both sides at once
+• More people want a cab, because nobody wants to walk to the metro or ride a scooter in the rain.
+• Fewer drivers are free, because many bike riders log off.
+• Traffic slows down, so each driver finishes fewer rides per hour.
 
-5. Predict before it pours
-Some apps now go one step further.
-They read the weather forecast and predict the rush.
-Drivers get nudged towards busy areas before the rain even starts.
+4. The higher price does two jobs
+• It makes some riders wait 20 minutes or take an auto instead.
+• It pulls in drivers from nearby zones, who see your area light up on their map.
+• Without it, you wouldn't see ₹180. You'd see "No cabs available".
 
-The trade-off is real.
-Raise the price too fast and people feel cheated in the worst moment of their day.
-Too slowly and everyone gets stuck.
-That's partly why India's rules now cap how high it can go.
+5. Some apps predict the rush in advance
+• They read the weather forecast and estimate demand before it starts raining.
+• Drivers get nudged towards busy areas before people even start booking.
 
-The ₹320 isn't really a price for you.
-It's a message to the drivers: we need you here.
+The trade-off is a real one. If the price rises too fast, people feel cheated at the worst moment of their day. If it rises too slowly, everyone gets stuck. That's partly why India's rules now put a cap on how high it can go.
+
+So the ₹320 isn't really a price aimed at you. It's a message to the drivers saying "we need you here."
 
 Do you pay the surge, or wait it out?
 
