@@ -4,6 +4,9 @@
 
 ---
 
+Copy from the box below (GitHub has a copy button at its top right). Line breaks stay exactly as they are.
+
+```text
 Everyday Engineering #8
 
 6 pm. Same ride I take every day.
@@ -13,44 +16,41 @@ Today it's raining, and the app says ₹320.
 My first thought: they're cashing in on the rain.
 So I looked into how that price is actually decided.
 It's not a person, and it's not one number for the city.
+It happens in 5 steps.
 
-First, the city is cut into small hexagons.
-A few blocks each.
+1. Zones
+The city is cut into small hexagons, a few blocks each.
 Every hexagon gets its own price.
+That's why walking 500 metres down the road can make the price drop.
+You've stepped into a different hexagon.
 
-That's why moving 500 metres down the road can make the price drop.
-You've walked into a different hexagon.
-
-Then, every minute or so, each hexagon asks two questions:
+2. The math
+Every minute or so, each hexagon asks two questions:
 How many people are opening the app here right now?
 How many free drivers are nearby?
-
 10 people and 10 drivers: normal price.
 30 people and 6 drivers: the price goes up.
 
-Rain breaks both numbers at the same time.
-
+3. Rain hits both sides
 More people want a cab.
 Nobody wants to walk to the metro or ride a scooter in the rain.
-
 And fewer drivers are free.
 Many bike riders log off.
 Traffic slows down, so each driver finishes fewer rides per hour.
 
-So why raise the price, instead of just making people wait?
-Because the higher price does two jobs.
-
-It makes some people wait 20 minutes, or take an auto.
+4. The price does two jobs
+Why not just make people wait?
+Because a higher price makes some people wait 20 minutes, or take an auto.
 And it pulls drivers in.
-A driver two hexagons away sees your area light up on their map and heads over.
-
+A driver two hexagons away sees your area light up and heads over.
 Without it, the app wouldn't show ₹180.
 It would show "No cabs available".
 Cheap, but no ride.
 
+5. Predict before it pours
 Some apps now go one step further.
-They don't wait for people to start booking.
-They read the weather forecast and predict the rush, so drivers are nudged towards the busy areas before the rain starts.
+They read the weather forecast and predict the rush.
+Drivers get nudged towards busy areas before the rain even starts.
 
 The trade-off is real.
 Raise the price too fast and people feel cheated in the worst moment of their day.
@@ -63,6 +63,7 @@ It's a message to the drivers: we need you here.
 Do you pay the surge, or wait it out?
 
 #EverydayEngineering #SystemDesign #ProductEngineering #LearningInPublic
+```
 
 ---
 
