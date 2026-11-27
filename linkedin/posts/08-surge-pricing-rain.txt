@@ -1,8 +1,8 @@
 Everyday Engineering #8
 
-Why does the cab price almost double when it rains?
+Why does the cab price jump when it rains?
 
-Yesterday at 6 pm, my usual ride home cost ₹180. Today it was raining, and the same ride showed ₹320. My first thought was that the app was cashing in on the rain. So I looked into how that price is actually decided, and it turns out to be a neat piece of engineering.
+Yesterday at 6 pm, my usual ride home cost ₹180. Today it was raining, and the same ride showed ₹280. My first thought was that the app was cashing in on the rain. So I looked into how that price is actually decided, and it turns out to be a neat piece of engineering.
 
 Here's how it works, in 5 steps:
 
@@ -32,7 +32,7 @@ Here's how it works, in 5 steps:
 
 The trade-off is a real one. If the price rises too fast, people feel cheated at the worst moment of their day. If it rises too slowly, everyone gets stuck. That's partly why India's rules now put a cap on how high it can go.
 
-So the ₹320 isn't really a price aimed at you. It's a message to the drivers saying "we need you here."
+So the ₹280 isn't really a price aimed at you. It's a message to the drivers saying "we need you here."
 
 Do you pay the surge, or wait it out?
 

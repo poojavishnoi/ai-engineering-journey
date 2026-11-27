@@ -1,4 +1,4 @@
-# Post 08: Why the cab price almost doubles when it rains
+# Post 08: Why the cab price jumps when it rains
 
 **Status:** draft (for 2026-11-27) · **Topic:** apps & daily life · **Image:** `images/08-surge-pricing-rain.png`
 
@@ -9,9 +9,9 @@ Copy from the box below (GitHub has a copy button at its top right). Line breaks
 ```text
 Everyday Engineering #8
 
-Why does the cab price almost double when it rains?
+Why does the cab price jump when it rains?
 
-Yesterday at 6 pm, my usual ride home cost ₹180. Today it was raining, and the same ride showed ₹320. My first thought was that the app was cashing in on the rain. So I looked into how that price is actually decided, and it turns out to be a neat piece of engineering.
+Yesterday at 6 pm, my usual ride home cost ₹180. Today it was raining, and the same ride showed ₹280. My first thought was that the app was cashing in on the rain. So I looked into how that price is actually decided, and it turns out to be a neat piece of engineering.
 
 Here's how it works, in 5 steps:
 
@@ -41,7 +41,7 @@ Here's how it works, in 5 steps:
 
 The trade-off is a real one. If the price rises too fast, people feel cheated at the worst moment of their day. If it rises too slowly, everyone gets stuck. That's partly why India's rules now put a cap on how high it can go.
 
-So the ₹320 isn't really a price aimed at you. It's a message to the drivers saying "we need you here."
+So the ₹280 isn't really a price aimed at you. It's a message to the drivers saying "we need you here."
 
 Do you pay the surge, or wait it out?
 
@@ -51,7 +51,7 @@ Do you pay the surge, or wait it out?
 ---
 
 ## Behind the post (for you, not for posting)
-- **Honesty check:** Uber has publicly explained surge pricing and its hexagon grid (it open-sourced H3, its hexagon system). Ola and Rapido haven't published how theirs works. The post describes the general pattern, not any one company's exact code. ₹180 and ₹320 are illustrative numbers.
+- **Honesty check:** Uber has publicly explained surge pricing and its hexagon grid (it open-sourced H3, its hexagon system). Ola and Rapido haven't published how theirs works. The post describes the general pattern, not any one company's exact code. ₹180 and ₹280 are illustrative numbers.
 - **Why hexagons and not squares:** every neighbour of a hexagon is the same distance from its centre. A square has 4 close neighbours and 4 diagonal ones that are further away, which makes "nearby demand" uneven. Hexagons also tile the map without gaps.
 - **"Every minute or so":** Uber has said surge prices update every few minutes. The exact interval isn't public and varies, so the post keeps it vague.
 - **The cap:** India's Motor Vehicle Aggregator Guidelines (2020) capped surge at 1.5x the base fare. Updated guidelines in 2025 allowed up to 2x. States implement these on their own, so it isn't the same everywhere. That's why the post just says "cap how high it can go." If someone asks for the number, say "2x the base fare under the 2025 central guidelines, depending on the state."
